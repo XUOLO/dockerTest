@@ -29,10 +29,11 @@ public class UserController {
 
     @GetMapping("/user")
     public List<UserEntity> user() {
-        return userRepo.findAll();
+        List<UserEntity> s = userRepo.findAll();
+        return s;
     }
 
-    @PostMapping("/user")
+    @PostMapping("/user/create")
     public UserEntity saveUser(@RequestBody UserEntity user) {
         return userRepo.save(user);
     }

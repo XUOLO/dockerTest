@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @version 01-00
  * @since 7/22/2024
  */
-
-public interface UserRepo extends JpaRepository<UserEntity, Integer> {
+@Repository
+public interface UserRepo extends JpaRepository<UserEntity, Long> {
 
 }
