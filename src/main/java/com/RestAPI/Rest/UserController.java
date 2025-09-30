@@ -36,5 +36,11 @@ public class UserController {
     @PostMapping("/user/create")
     public UserEntity saveUser(@RequestBody UserEntity user) {
         return userRepo.save(user);
-    }
+    }   
+
+    
+    @PostMapping("/user/creates")
+    public UserEntity saveUsers(@RequestBody UserEntity user) {
+        return userRepo.save(user);
+    }   
 }
